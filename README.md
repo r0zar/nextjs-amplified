@@ -1,4 +1,4 @@
-## Getting Started
+## Setup
 
 `npm install`
 
@@ -13,6 +13,6 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
 `amplify init`
 
-### Start the app in dev mode
+## Start the app in dev mode
 
 `npm run dev`
