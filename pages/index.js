@@ -19,12 +19,9 @@ const App = ({todos}) => {
   });
   React.useEffect(() => {
     const listener = API.graphql(graphqlOperation(onCreateTodo));
-    console.log('LISTENER', listener)
     const subscription = listener.subscribe(v => {
-      console.log('V', v)
       dispatch({ type: "add", payload: v.value.data.onCreateTodo });
     });
-    console.log(subscription)
     return () => {
       subscription.unsubscribe();
     };
